@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game layout design HTML+CSS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="row">
+          <div class="col-2">
+            <aside class="left-side">
+              <div class="brand-name">
+                <div class="logo">
+                  <img src="img/logo-brand.png" alt="Logo Brand" />
+                </div>
+                <a href="#" class="web-name"> GAME<span>VERSE</span> </a>
+              </div>
+              <div class="navbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                      <span><i class="fa-solid fa-home"></i>Home</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span
+                        ><i class="fa-solid fa-table-list"></i>Category</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span
+                        ><i class="fa-solid fa-book-bookmark"></i>Library</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span
+                        ><i class="fa-solid fa-hashtag"></i>Community</span
+                      ></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span><i class="fa-solid fa-user-group"></i>Friends</span>
+                      <span class="news">2</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span><i class="fa-solid fa-heart"></i>Wishlist</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span
+                        ><i class="fa-solid fa-download"></i>Downloads</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav mt-119">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span><i class="fa-solid fa-gear"></i>Settings</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span
+                        ><i class="fa-solid fa-clipboard-question"></i
+                        >Help</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+                <div class="promotion">
+                  <h3>50% discount</h3>
+                  <p>on the games in the selection</p>
+                  <button type="button" class="btn-library">
+                    Go to library
+                  </button>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-7">
+            <div class="content">
+              <div class="header">
+                <div class="header-left">
+                  <input type="search" placeholder="Search" class="search" />
+                  <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </div>
+                <ul class="header-right">
+                  <li class="header-item">
+                    <a href="#" class="header-link"
+                      ><i class="fa-solid fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#" class="header-link"
+                      ><i class="fa-solid fa-bell"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="banner" style="background-image: url(img/banner.jpg)">
+                <ul class="banner-list">
+                  <li class="banner-item">Magic</li>
+                  <li class="banner-item">Fantasy</li>
+                  <li class="banner-item">Open World</li>
+                  <li class="banner-item">Adventure</li>
+                </ul>
+                <div class="detail">
+                  <div class="banner-text">
+                    <h3>Hogwarts Legacy</h3>
+                    <p>
+                      Hogwarts Legacy is an immersiv, open-world action RPG set
+                      in the world first introduced in the Harry Potter books.
+                    </p>
+                  </div>
+                  <div class="wrapper-button">
+                    <button type="button" class="btn btn-buy">
+                      <b>Buy now</b>
+                      <span>$24.00 <del>$35.99</del></span>
+                    </button>
+                    <button type="button" class="btn btn-fav">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="title-section">
+                <h3>Actual games</h3>
+                <div class="wrapper-button">
+                  <button type="button" class="btn btn-pre">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <button type="button" class="btn btn-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-list">
+                <div class="card">
+                  <img
+                    src="img/marvel-spiderman-2.avif"
+                    alt="Marvel SpiderMan 2"
+                  />
+                  <div class="overlay"></div>
+                  <span class="price">$69.00</span>
+                </div>
+                <div class="card">
+                  <img src="img/Mortal_Kombat_1.jpeg" alt="Mortal Kombat 1" />
+                  <div class="overlay"></div>
+                  <span class="price">$67.99</span>
+                </div>
+                <div class="card">
+                  <img src="img/fortnite.jpg" alt="fortnite" />
+                  <div class="overlay"></div>
+                  <span class="price">$54.00</span>
+                </div>
+                <div class="card">
+                  <img src="img/forza-horizon-5.webp" alt="Forza Horizon 5" />
+                  <div class="overlay"></div>
+                  <span class="price">$99.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <aside class="right-side">
+              <div class="account">
+                <div class="profile-img">
+                  <img src="img/pf/acc.png" alt="QuantumSpectre55 profile" />
+                </div>
+                <div class="name-account">
+                  <h4>QuantumSpectre55</h4>
+                  <span>quantums@gmail.com</span>
+                </div>
+              </div>
+              <h3>Friends online</h3>
+              <ul class="acc-list">
+                <li class="acc-item">
+                  <a href="#" class="acc-link">
+                    <div class="pf-img">
+                      <img src="img/pf/man.png" alt="CrimsonTiger67 profile" />
+                      <div class="status"></div>
+                    </div>
+                    <div class="name-acc">
+                      <h4>CrimsonTiger67</h4>
+                      <span>Join<i>Resident Evil 4</i></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="acc-item">
+                  <a href="#" class="acc-link">
+                    <div class="pf-img">
+                      <img src="img/pf/profile.png" alt="stl3alth_sniper profile" />
+                      <div class="status"></div>
+                    </div>
+                    <div class="name-acc">
+                      <h4>stl3alth_sniper</h4>
+                      <span>Playing<i>Fortnite</i></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="acc-item">
+                  <a href="#" class="acc-link">
+                    <div class="pf-img">
+                      <img src="img/pf/female.png" alt="Blitzkrieg66 profile" />
+                      <div class="status"></div>
+                    </div>
+                    <div class="name-acc">
+                      <h4>Blitzkrieg66</h4>
+                      <span>Join<i>EA Sports FC 24</i></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="acc-item">
+                  <a href="#" class="acc-link">
+                    <div class="pf-img">
+                      <img src="img/pf/user (1).png" alt="phoenix_rising profile" />
+                      <div class="status"></div>
+                    </div>
+                    <div class="name-acc">
+                      <h4>phoenix_rising</h4>
+                      <span>Playing<i>Rocket League</i></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="acc-item">
+                  <a href="#" class="acc-link">
+                    <div class="pf-img">
+                      <img src="img/pf/user.png" alt="neonNova profile" />
+                      <div class="status"></div>
+                    </div>
+                    <div class="name-acc">
+                      <h4>neonNova</h4>
+                      <span>Playing<i>GTA V</i></span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="title-section">
+                <h3>Recently played</h3>
+                <button type="button" class="btn-more">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </button>
+              </div>
+              <ul class="played-list">
+                <li class="played-item">
+                  <a href="#" class="played-link">
+                    <div class="game-logo">
+                      <img src="img/hitman.jpg" alt="Hitman World of Assassin">
+                    </div>
+                    <div class="status">
+                      <h4>Hitman World of Assassin</h4>
+                      <span>72%</span><br>
+                      <meter min="0" low="5" high="99" max="100" value="72"></meter>
+                    </div>
+                  </a>
+                </li>
+                <li class="played-item">
+                  <a href="#" class="played-link">
+                    <div class="game-logo">
+                      <img src="img/the-witcher-3-wild-hunt.webp" alt="The Witcher 3 Wild Hunt">
+                    </div>
+                    <div class="status">
+                      <h4>The Witcher 3 Wild Hunt</h4>
+                      <span>12%</span><br>
+                      <meter min="0" low="5" high="99" max="100" value="12"></meter>
+                    </div>
+                  </a>
+                </li>
+                <li class="played-item">
+                  <a href="#" class="played-link">
+                    <div class="game-logo">
+                      <img src="img/nba-2k24.jpg" alt="NBA 2k24">
+                    </div>
+                    <div class="status">
+                      <h4>NBA 2k24</h4>
+                      <span>96%</span><br>
+                      <meter min="0" low="5" high="99" max="100" value="96"></meter>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+
+        <div class="credit">
+          <cite>@RV_Panha</cite>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/font-awesome.js"></script>
+  </body>
+</html>

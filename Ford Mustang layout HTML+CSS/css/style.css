@@ -1,0 +1,1389 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/ford-antenna");
+
+@font-face {
+  font-family: Ford Script;
+  src:url("Fontscript.ttf");
+ }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #0068d0;
+  --color-1-hover: #0142bd;
+  --color-2: #00095b;
+  --color-3: #333333;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  width: 1400px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-1 {
+  width: calc(100% / 12);
+}
+.col-2 {
+  width: calc(100% / 6);
+}
+.col-3 {
+  width: calc(100% / 4);
+}
+.col-4 {
+  width: calc(100% / 3);
+}
+.col-5 {
+  width: calc(100% / 2 - 100% / 12);
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: calc(100% / 2 + 100% / 12);
+}
+.col-8 {
+  width: calc((100% / 3) * 2);
+}
+.col-9 {
+  width: calc(100% / 2 + 100% / 4);
+}
+.col-12 {
+  width: 100%;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.df {
+  display: flex;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.item-center {
+  align-items: center;
+}
+h1 {
+  font-size: 55px;
+  font-weight: 400;
+}
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--color-1);
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--color-1-hover);
+  transition: 0.7s;
+}
+.btn-bg-tran {
+  padding: 20px 0;
+  background-color: transparent;
+}
+.btn-bg-tran span {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.btn-bg-tran:hover,
+.btn-bg-tran:hover span {
+  color: #ccc;
+  background-color: transparent;
+}
+/* ****************** */
+/* ***** header ***** */
+/* ****************** */
+
+.header {
+  font-family: "Ford Antenna Medium", sans-serif;
+  width: 100%;
+  /* background-color: #fff; */
+  background-color: transparent;
+  position: absolute;
+}
+
+.header .container .navbar .row {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .navbar .navbar-nav {
+  display: flex;
+}
+
+.header .container .navbar .row .col-2 {
+  font-family: Ford Script;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.header .container .navbar .row .col-5:nth-child(3) {
+  display: flex;
+  justify-content: end;
+}
+
+.header .navbar .row .col-5 .navbar-nav .nav-list {
+  margin: 0 20px;
+}
+
+.header .navbar .row .col-5:nth-child(3) .navbar-nav .nav-list {
+  margin: 0;
+}
+
+.header .navbar .row .col-5 .navbar-nav .nav-list .nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-2);
+  padding: 21px 0;
+}
+
+.header .navbar .row .col-5:nth-child(3) .navbar-nav .nav-list .nav-link i {
+  padding: 15px;
+}
+
+.header .navbar .row .col-5 .navbar-nav .nav-list .nav-link:hover {
+  border-bottom: 2px solid var(--color-2);
+}
+
+.header .navbar .row .col-2 .logo-brand{
+  font-size: 50px;
+  color: var(--color-2);
+}
+
+/* ****************** */
+/* ***** banner ***** */
+/* ****************** */
+
+.banner {
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.banner.top{
+  height: 780px;
+}
+
+.banner .container .detail {
+  height: 780px;
+  color: #fff;
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.banner .container .detail h1:first-child {
+  font-family: "Ford Antenna Medium", sans-serif;
+  font-size: 45px;
+  font-weight: 0;
+}
+
+.banner .container .detail .mustang {
+  position: relative;
+}
+
+.banner .container .detail span {
+  font-size: 42px;
+  font-weight: 700;
+  position: absolute;
+  top: 3%;
+  right: -12%;
+}
+
+.banner .container .detail .btn-inventory {
+  margin: 25px 0 40px 0;
+}
+
+/* ****************** */
+/* ** nav--content ** */
+/* ****************** */
+
+.nav-content {
+  height: 56px;
+  background-color: #fff;
+}
+
+.nav-content .container {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-content .container .nav-list {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-content .container .nav-list .nav-item {
+  margin: 0 10px;
+}
+
+.nav-content .container .nav-list .nav-item:first-child {
+  font-weight: bold;
+  padding-right: 20px;
+  border-right: 1px solid var(--color-3);
+}
+
+.nav-content .container .nav-list .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-3);
+  padding: 5px 0;
+}
+
+.nav-content .container .nav-list .nav-item .nav-link.active {
+  color: var(--color-1);
+  border-bottom: 4px solid var(--color-1);
+}
+
+.nav-content .container .nav-list .nav-item .nav-link:hover {
+  border-bottom: 1px solid var(--color-3);
+}
+
+/* ****************** */
+/* * vehicle-_price * */
+/* ****************** */
+
+.vehicle-price {
+  margin: 60px;
+  /* border: 1px solid red; */
+}
+
+.vehicle-price .container .row .col-3 {
+  padding: 0 15px;
+}
+
+.vehicle-price .container .row .col-3:nth-child(2) {
+  padding-left: 230px;
+}
+
+.vehicle-price .container .row .col-3 strong {
+  font-family: "Ford Antenna Medium", sans-serif;
+  color: var(--color-1);
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.vehicle-price .container .row .col-3 span {
+  font-size: 20px;
+}
+
+.vehicle-price .container .row .col-3 a {
+  color: #111;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.vehicle-price .container .row .col-3 .seat {
+  color: #111;
+}
+
+/* ****************** */
+/* ****  _quote  **** */
+/* ****************** */
+
+.quote {
+  padding: 60px 15px;
+}
+
+.quote .container h1 {
+  padding: 10px 15px;
+}
+
+.quote .container p {
+  width: 920px;
+  padding: 0 15px;
+  font-size: 19px;
+  font-weight: 450;
+}
+
+/* ****************** */
+/* ****  _model  **** */
+/* ****************** */
+
+.model {
+  padding: 60px 0;
+}
+
+.model .container .title-section {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model .container .title-section a {
+  text-decoration: underline;
+  color: gray;
+}
+.model .container .title-section span {
+  color: gray;
+}
+
+.arrow-right {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 0;
+  padding-left: 15px;
+}
+
+.model .container .row .col-3 {
+  padding: 0 15px;
+}
+
+.model .container .row .col-3 .head-list {
+  padding: 30px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+.model .container .row .col-3 .model-list .model-item {
+  font-size: 25px;
+  margin: 15px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.model .container .row .col-3 .model-list .model-item .price {
+  padding-top: 7px;
+  font-size: 18px;
+}
+
+.model .container .row .col-3 .model-list .model-item.active {
+  color: var(--color-1);
+  border-bottom: 4px solid var(--color-1);
+  background-color: #0381fe1e;
+}
+
+.model .container .row .col-3 .model-list .model-item:hover {
+  border-bottom: 1px solid var(--color-3);
+}
+
+.model .container .row .col-9 {
+  padding: 0 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.model .container .row .col-9 .vehicle-img {
+  width: 100%;
+  height: 450px;
+}
+
+.model .container .row .col-9 .vehicle-img img {
+  object-fit: contain;
+}
+
+.model .container .row .col-9 .detail-list {
+  width: 900px;
+  display: flex;
+}
+
+.model .container .row .col-9 .detail-list .detail-item {
+  width: calc(900px / 3);
+  color: var(--color-3);
+  padding-left: 60px;
+}
+.model .container .row .col-9 .detail-list .detail-item:first-child {
+  width: 500px;
+  padding-left: 0;
+}
+
+.model .container .row .col-9 .detail-list .detail-item h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.model .container .row .col-9 .detail-list .detail-item h3 {
+  font-family: "Ford Antenna Medium", sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.model .container .row .col-9 .detail-list .detail-item h3 sup {
+  font-size: 10px;
+  font-weight: 100;
+  color: gray;
+  padding-left: 3px;
+}
+
+.model .container .row .col-9 .detail-list .detail-item span {
+  color: gray;
+}
+
+.model .container .row .col-9 .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.model .container .row .col-9 .info-list {
+  width: 450px;
+  list-style-type: disc;
+  padding: 15px 0 0 15px;
+}
+
+.model .container .row .col-9 .info-list .info-item {
+  padding: 1px 0;
+  color: var(--color-3);
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.model .container .row .col-9 .info-list .info-item sup {
+  font-size: 10px;
+}
+
+.model .container .row .col-9 .info a {
+  padding-right: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--color-1);
+}
+
+/* ****************** */
+/* ****  update  **** */
+/* ****************** */
+
+.update {
+  padding: 60px 0;
+}
+
+.update .container .row .col-6 {
+  padding: 0 15px;
+}
+
+.update .container .row .col-6 .update-car {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.update .container .row .col-6 .describe h2 {
+  width: 600px;
+  padding: 20px 0;
+  color: var(--color-2);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.update .container .row .col-6 .describe p {
+  line-height: 25px;
+  color: var(--color-3);
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.update .container .row .col-6 .describe .list {
+  padding: 20px 0 40px 40px;
+  list-style-type: disc;
+}
+
+.update .container .row .col-6 .describe .list .item {
+  padding: 1px 0;
+  color: var(--color-3);
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.update .container .row .col-6 .describe small {
+  color: gray;
+}
+
+.update .container .row .col-6 .describe .btn-update {
+  margin: 30px 0;
+  border: 1px solid var(--color-1);
+  background-color: transparent;
+  color: var(--color-1);
+}
+.update .container .row .col-6 .describe .btn-update:hover {
+  outline: 2px solid var(--color-2);
+  color: var(--color-2);
+  transition: all 0.2s ease;
+}
+
+/* ****************** */
+/* ****  _title  **** */
+/* ****************** */
+
+.title {
+  padding: 40px 0;
+  background-color: #00142e;
+}
+
+.title .container .row .col-12 h1 {
+  padding: 0 30px;
+  color: #fff;
+}
+
+/* ****************** */
+/* ** performance ** */
+/* ****************** */
+
+.performance {
+  padding: 40px 0 12px 0;
+  background-color: #00142e;
+}
+
+.performance .perform-list {
+  display: flex;
+}
+
+.performance .perform-list .perform-item {
+  width: calc(1400px / 4);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 10px;
+  padding: 10px 0;
+  border-bottom: 3px solid #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.performance .perform-list .perform-item sup {
+  font-size: 10px;
+}
+
+.performance .perform-list .perform-item.active {
+  color: var(--color-1);
+  border-bottom: 5px solid var(--color-1);
+}
+
+.performance .container .row .col-6 {
+  padding: 100px 0;
+}
+
+.performance .container .row .col-6:first-child {
+  padding-left: 50px;
+}
+
+.performance .container .row .col-6 .perform-img {
+  width: 100%;
+  height: 500px;
+}
+
+.performance .container .row .col-6 .perform-info {
+  padding: 0 30px;
+}
+
+.performance .container .row .col-6 .perform-info h2 {
+  width: 600px;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.performance .container .row .col-6 .perform-info p {
+  line-height: 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 450;
+  padding-bottom: 20px;
+}
+
+.performance .container .row .col-6 .perform-info small {
+  color: #eee;
+}
+
+.performance .container .btn-perform {
+  margin: 40px 0 0 70px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.performance .container .btn-perform:hover {
+  color: gray;
+  border: 1px solid gray;
+  outline: 2px solid gray;
+  transition: all 0.2s ease;
+}
+
+/* ****************** */
+/* ****  _title  **** */
+/* ****************** */
+
+.design_ {
+  background-color: #f2f2f2;
+}
+
+.design_ .container .row .col-12 h1 {
+  padding: 0 30px;
+  color: #00142e;
+}
+
+/* ****************** */
+/* ****  _quote  **** */
+/* ****************** */
+
+.design {
+  padding: 40px 0 12px 0;
+  background-color: #f2f2f2;
+}
+
+.design .container .row .col-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.design .container .row .col-4 .card {
+  width: 450px;
+  margin: 80px 0;
+}
+
+.design .container .row .col-4 .card .thumbnail {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.design .container .row .col-4 .card h2 {
+  padding: 30px 20px 10px 20px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.design .container .row .col-4 .card p {
+  line-height: 25px;
+  padding: 0 20px;
+  width: 450px;
+  color: #010203;
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.pt-70 {
+  padding-top: 70px !important;
+}
+
+.design .container .row .col-4 .card .noted {
+  line-height: 16px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.design .container .btn-design {
+  margin: 23px 0 0 25px;
+  color: var(--color-1);
+  border: 1px solid var(--color-1);
+  background-color: transparent;
+}
+
+.design .container .btn-design:hover {
+  color: var(--color-2);
+  outline: 2px solid var(--color-2);
+  transition: all 0.2s ease;
+}
+
+/* ****************** */
+/* ***  _package  *** */
+/* ****************** */
+
+.package {
+  padding: 50px 0;
+}
+
+.package .container .row {
+  margin: 0 15px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.package .container .row .col-6 .package-img {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.package .container .row .col-6 .package-info {
+  padding: 0 30px;
+}
+
+.package .container .row .col-6 .package-info h2 {
+  width: 600px;
+  padding: 20px 0;
+  color: var(--color-2);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.package .container .row .col-6 .package-info p {
+  line-height: 25px;
+  color: var(--color-3);
+  font-size: 18px;
+  font-weight: 450;
+  padding-bottom: 20px;
+}
+
+.package .container .row .col-6 .package-info .btn-package {
+  margin: 35px 0;
+  color: var(--color-1);
+  border: 1px solid var(--color-1);
+  background-color: transparent;
+}
+
+.package .container .row .col-6 .package-info .btn-package:hover {
+  color: var(--color-2);
+  outline: 2px solid var(--color-2);
+  transition: all 0.2s ease;
+}
+
+/* ****************** */
+/* ****  _color  **** */
+/* ****************** */
+
+.color {
+  padding: 60px 0;
+}
+
+.color .container .title-section h2 {
+  padding: 0 15px 25px 15px;
+  color: var(--color-2);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.color .container .row .col-12 .car-color {
+  padding: 0 15px;
+  width: 100%;
+  height: 550px;
+}
+
+.color .container .row .col-12 .features {
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color .container .row .col-12 .features strong {
+  padding-bottom: 10px;
+  color: var(--color-3);
+}
+
+.color .container .row .col-12 .features span {
+  padding: 0 2px;
+  color: gray;
+}
+
+.color .container .row .col-12 .features .color-list {
+  display: flex;
+}
+
+.color .container .row .col-12 .features .color-list .color-item {
+  width: 48px;
+  height: 48px;
+  margin: 20px 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.color .container .row .col-12 .features .features-color {
+  display: flex;
+  align-items: center;
+}
+
+.color .container .row .col-12 .features .features-color .btn-build {
+  margin-left: 80px;
+}
+
+.color .container .row .col-12 .features .features-color .btn-build:hover {
+  background-color: var(--color-1-hover);
+  outline: 2px solid var(--color-1-hover);
+  box-shadow: rgba(0, 0, 0, 0.269) 0px 15px 25px,
+    rgba(0, 0, 0, 0.224) 0px 5px 10px;
+  transition: 1s;
+}
+
+.color .features .color-list .color-item.one {
+  background-color: #003b8b;
+}
+.color .features .color-list .color-item.two {
+  background-color: #0074c7;
+}
+.color .features .color-list .color-item.three {
+  background-color: #8b0003;
+}
+.color .features .color-list .color-item.four {
+  background-color: #0e0e19;
+}
+.color .features .color-list .color-item.five {
+  background-color: #2a292e;
+}
+.color .features .color-list .color-item.six {
+  background-color: #aab1b3;
+}
+.color .features .color-list .color-item.seven {
+  background-color: #747171;
+}
+.color .features .color-list .color-item.eight {
+  background-color: #343d47;
+}
+.color .features .color-list .color-item.nine {
+  background-color: #cda933;
+}
+.color .features .color-list .color-item.ten {
+  background-color: #cd0e00;
+}
+.color .features .color-list .color-item.eleven {
+  background-color: #c4c2c5;
+}
+
+.color .container .row .col-12 .features p {
+  padding: 20px 0;
+  color: var(--color-3);
+  font-size: 18px;
+  font-weight: 450;
+}
+
+/* ****************** */
+/* *** technology *** */
+/* ****************** */
+
+.technology {
+  background-color: #fff;
+}
+
+.technology .container .row .col-12 h1 {
+  padding: 0 30px;
+  color: #00142e;
+}
+
+/* ****************** */
+/* ****** tech ****** */
+/* ****************** */
+
+.tech {
+  background-color: #fff;
+}
+
+/* ****************** */
+/* **** _gallery **** */
+/* ****************** */
+
+.gallery {
+  padding: 40px 0;
+}
+
+.gallery .container .title-section h2 {
+  padding: 0 15px 25px 15px;
+  color: var(--color-2);
+  font-size: 40px;
+  font-weight: 450;
+}
+
+.gallery .container .row {
+  padding: 0 15px;
+}
+
+.gallery .container .row .col-3 .image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery .container .row .col-3 .image img {
+  position: absolute;
+}
+
+.gallery .container .row .col-3 .image img:hover {
+  transform: scale(1.1);
+  transition: all 0.8s ease-in-out;
+}
+
+.gallery .container .row .col-3 .image .overlay {
+  width: 100%;
+  height: 300px;
+  color: #fff;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.gallery .container .row .col-3 .image .overlay span {
+  color: #fff;
+  font-weight: 0;
+  padding-left: 15px;
+}
+
+/* ****************** */
+/* ***** expert ***** */
+/* ****************** */
+
+.expert {
+  padding: 40px 0;
+  background-color: #00142e;
+}
+
+.expert .container .title-section h2 {
+  padding: 0 15px 25px 15px;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 450;
+}
+
+.expert .container .row .col-6 .card {
+  margin: 100px 0 30px 0;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.expert .container .row .col-6 .card .expert-img {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.expert .container .row .col-6 .card .info {
+  padding: 0 30px;
+}
+
+.expert .container .row .col-6 .card .info h2 {
+  padding: 25px 0 15px 0;
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.expert .container .row .col-6 .card .info p {
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.expert .container .row .col-6 .card .info .noted {
+  line-height: 16px;
+  padding: 20px 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.expert .container .row .col-6 .card .info .btn-bg-tran {
+  margin-top: 10px;
+}
+
+/* ****************** */
+/* ****** _faq ****** */
+/* ****************** */
+
+/* .faq {
+  margin: 40px 0;
+} */
+
+.faq .container .title-section h1 {
+  padding: 40px 15px;
+  color: #00142e;
+}
+
+.faq .container .col-12 .faq-list {
+  padding: 0 45px;
+}
+
+.faq .container .col-12 .faq-list .faq-item {
+  padding: 25px 0;
+  border-top: 1px solid #c5c4c4;
+}
+
+.footer .faq-list .faq-item .question,
+.faq .container .col-12 .faq-list .faq-item .question {
+  color: #4e4d4d;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.footer .faq-list .faq-item i,
+.faq .container .col-12 .faq-list .faq-item i {
+  font-size: 18px;
+  color: var(--color-1);
+}
+
+.footer .faq-list .faq-item .dropdown,
+.faq .container .col-12 .faq-list .dropdown {
+  color: #4a4949;
+  padding: 0 0 25px 0;
+  display: none;
+  border: none;
+}
+
+.faq .container .col-12 .faq-list .dropdown .answer {
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.faq .container .col-12 .faq-list .dropdown .answer sup {
+  font-size: 12px;
+  color: var(--color-1);
+}
+
+.faq .container .col-12 .faq-list .dropdown .noted {
+  line-height: 16px;
+  padding: 15px 0 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.faq-list li.faq-item.rotate i::before {
+  content: "\f068";
+}
+
+.faq-list li.faq-item i::before {
+  content: "\f067";
+}
+
+/* ****************** */
+/* **** _feature **** */
+/* ****************** */
+
+.feature {
+  padding: 60px 0;
+  background-color: #092a46;
+}
+
+.feature .container .row .col-4 .part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature .container .row .col-4 .part:hover {
+  cursor: default;
+}
+
+.feature .container .row .col-4 .part .icon {
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.feature .container .row .col-4 .part .icon:hover {
+  cursor: pointer;
+}
+
+.feature .container .row .col-4 .part strong {
+  color: var(--color-1);
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.feature .container .row .col-4 .part strong:hover {
+  cursor: pointer;
+}
+
+/* ****************** */
+/* ***** footer ***** */
+/* ****************** */
+
+.footer{
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.footer .faq-list {
+  margin: 10px 0;
+  padding: 0 75px;
+  border-top: 1px solid #c5c4c4;
+  border-bottom: 1px solid #c5c4c4;
+}
+
+.footer .faq-list .faq-item {
+  border: none;
+  padding: 25px 0;
+}
+
+.footer .faq-list .faq-item.dropdown {
+  height: 270px;
+  margin: 20px 0 70px 0;
+  border: none;
+  overflow: auto;
+  display: none;
+}
+
+.footer .faq-list .faq-item.dropdown b {
+  font-size: 14px;
+}
+
+.footer .faq-list .faq-item.dropdown .text {
+  width: 1120px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 450;
+}
+
+/* width */
+.footer ::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.footer ::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* Handle */
+.footer ::-webkit-scrollbar-thumb {
+  background: #c8c8c8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.footer ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ***** menu ***** */
+.footer .menu-footer{
+  margin: 0 40px;
+  padding: 60px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .menu-footer .input-group{
+  display: flex;
+  align-items: center;
+}
+
+.footer .menu-footer .icon{
+  width: 60px;
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid #111;
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .menu-footer .search{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  border: 1px solid #111;
+  border-left: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #fff;
+}
+
+.footer .menu-footer .menu-list{
+  display: flex;
+  align-items: center;
+}
+
+.footer .menu-footer .menu-list .menu-item{
+  padding: 0 12px;
+  font-size: 18px;
+  font-weight: 450px;
+}
+
+.footer .menu-footer .menu-list .menu-item:hover{
+  cursor: pointer;
+  font-weight: 550;
+}
+
+/* ***** quick-link ***** */
+.footer .link-wrapper {
+  margin: 0 40px;
+  padding: 60px 35px;
+  border-bottom: 1px solid #c5c4c4;
+  border-top: 1px solid #c5c4c4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .link-wrapper .quick-link .title-link{
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.footer .link-wrapper .quick-link .link{
+  padding: 2px 0;
+}
+
+.footer .link-wrapper .quick-link .link a{
+  color: rgb(96, 96, 96);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer .link-wrapper .quick-link .link a:hover{
+  text-decoration: underline;
+}
+
+/* ***** menu-footer ***** */
+.footer .menu-footer .message i{
+  color: #fff;
+  font-size: 18px;
+  margin-right: 15px;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: #00142e;
+}
+
+.footer .menu-footer .message span{
+  color: gray;
+}
+
+.footer .menu-footer .menu-list .menu-item span{
+  font-size: 19px;
+  font-weight: 600;
+  color: rgb(71, 71, 71);
+  margin-right: 20px;
+}
+
+.footer .menu-footer .menu-list .menu-item span:hover{
+  cursor: default;
+}
+
+.footer .menu-footer .menu-list .menu-item i{
+  margin: 0 5px;
+  font-size: 29px;
+  color: #00142e;
+}
+
+.footer i:hover{
+  cursor: pointer;
+}
+
+/* ***** bottom-footer ***** */
+.footer .bottom-footer {
+  margin: 0 40px;
+  padding: 60px 100px;
+  border-top: 1px solid #c5c4c4;
+}
+
+.footer .bottom-footer .left-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .bottom-footer .left{
+  display: flex;
+  align-items: center;
+}
+
+.footer .bottom-footer .left:hover{
+  cursor: pointer;
+}
+
+.footer .bottom-footer .left .icon{
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.footer .bottom-footer .left span{
+  color: rgb(45, 45, 45);
+}
+
+.footer .bottom-footer .right {
+  font-family: Ford Script;
+  font-size: 30px;
+}
+
+.footer .bottom-footer .right a {
+  color: var(--color-2);
+}
+
+.footer .bottom-footer .setting-list{
+  margin-top: 27px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .bottom-footer .setting-list .setting-item:last-child,
+.footer .bottom-footer .setting-list .setting-item:first-child{
+  padding-left: 0;
+}
+
+.footer .bottom-footer .setting-list .setting-item{
+  font-size: 12.5px;
+  font-weight: 450;
+  color: rgb(96, 96, 96);
+  padding: 4px 7px;
+  display: flex;
+  align-items: center;
+}
+
+.footer .bottom-footer .setting-list .setting-item:hover{
+  cursor: pointer;
+}
+
+.footer .bottom-footer .setting-list .setting-item img{
+  width: 26px;
+  height: 13px;
+  margin-left: 10px;
+}
+
+/* *** Credit Cloner *** */
+.credit{
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

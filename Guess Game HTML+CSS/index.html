@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+  </head>
+  <body>
+    <div class="container" style="background-image: url(images/4571248.jpg)">
+      <h1>Algorithm Game</h1>
+
+      <div class="card">
+        <div class="cheering">
+          <img src="images/dog-cheer.png" alt="" />
+        </div>
+        <div class="card-title">
+          <h2>Guess the Number</h2>
+          <div class="logo">
+            <div class="pet">
+              <img src="convert/cat-thinking.svg" alt="cat-thinking" />
+            </div>
+            <div class="pet">
+              <img src="convert/dog-thinking.svg" alt="dog-thinking" />
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <span id="min-max">
+            Guess the number between
+            <strong class="min">1</strong>
+            and
+            <strong class="max">100</strong>
+          </span>
+          <p class="hint"></p>
+          <div class="input-group">
+            <input type="text" id="number" name="txtnumber" class="btn guess" />
+            <button class="btn btn-check submit">Check</button>
+            <button class="btn btn-replay" onclick="resetGame()">
+              Play Again
+            </button>
+          </div>
+          <p class="remaining">
+            Remaining guess : <span class="rem-val">10</span>
+          </p>
+          <p class="allguesses" id="predict">
+            All guesses : <span class="all"></span>
+          </p>
+          <p class="result" id="result"></p>
+        </div>
+      </div>
+
+      <div class="credit">
+        <cite>@RV_Panha</cite>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
